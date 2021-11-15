@@ -27,6 +27,7 @@
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/tinymce": "^1.0@alpha",
         "drush/drush": "^10.3",
+        "symfony/dotenv": "^5.3",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },
