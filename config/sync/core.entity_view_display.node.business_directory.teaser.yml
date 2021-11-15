@@ -1,0 +1,40 @@
+uuid: 9047f211-0e65-427a-acf4-e7da20b85986
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.business_directory.body
+    - field.field.node.business_directory.field_business_address
+    - field.field.node.business_directory.field_business_category
+    - field.field.node.business_directory.field_business_phone
+    - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_image
+    - node.type.business_directory
+  module:
+    - text
+    - user
+id: node.business_directory.teaser
+targetEntityType: node
+bundle: business_directory
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_business_address: true
+  field_business_category: true
+  field_business_phone: true
+  field_business_website: true
+  field_image: true
