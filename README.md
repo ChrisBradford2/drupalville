@@ -1,137 +1,136 @@
-# Composer template for Drupal projects
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Commits][commit-shield]][commit-url]
+[![Build][build-shield]][build-url]
+[![Licence][licence-shield]][licence-url]
+[![Website][website-shield]][website-url]
+[![Semestre1][milestones3-shield]][milestones3-url]
+[![Semestre2][milestones4-shield]][milestones4-url]
 
-[![CI](https://github.com/drupal-composer/drupal-project/actions/workflows/ci.yml/badge.svg?branch=9.x)](https://github.com/drupal-composer/drupal-project/actions/workflows/ci.yml)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <!--<img src="https://raw.githubusercontent.com/ChrisBradford2/DevNotes/dev/static/img/devnotes.png" alt="Logo" width="80" height="80" fill="#ffffff"/>-->
 
-This project template provides a starter kit for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+  <h3 align="center">Drupalville</h3>
 
-## Usage
+  <p align="center">
+    Wiki of the B3 INGLOG courses.
+    <br />
+    <a href="https://ChrisBradford2.github.io/drupalville"><strong>Explore the Website »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ChrisBradford2/drupalville/issues">Report Error</a>
+    ·
+    <a href="https://github.com/ChrisBradford2/drupalville/issues">Request Topic</a>
+    .
+  </p>
+</p>
 
-First you need to [install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-> Note: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar)
-for your setup.
+<!-- MENU STRUCTURE - CONTENT CREATION IN PROGRESS -->
 
-After that you can create the project:
+<!--## Menu Structure - Content creation in progress - ASK FOR YOUR HELP!
 
-```
-composer create-project drupal-composer/drupal-project:9.x-dev some-dir --no-interaction
-```
+Please feel free to contribute to any of the available pages. This is the current state of progress:
 
-With `composer require ...` you can download new dependencies to your
-installation.
+In this document all current Menu pages are marked with current progress status. You can choose the page you would like to contribute and get linked directly to the editable .md file in our Repo here:
 
-```
-cd some-dir
-composer require drupal/devel
-```
+https://www.notion.so/iotafoundation/Contribute-to-the-DevNotes-698e95b0bac8469d897fd13cf49574b3
 
-The `composer create-project` command passes ownership of all files to the
-project that is created. You should create a new Git repository, and commit
-all files not excluded by the `.gitignore` file.
+Please mark the page you work on "in progress"-->
 
-## What does the template do?
+<!-- ABOUT THE PROJECT -->
 
-When installing the given `composer.json` some tasks are taken care of:
+## About The Project
 
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
-* Creates environment variables based on your .env file. See [.env.example](.env.example).
+DevNotes is a web platform acting as a Wiki for the bachelor 3 INGLOG of Paris Ynov Campus allowing to visualize the students course notes.
 
-## Updating Drupal Core
+### Built With
 
-This project will attempt to keep all of your Drupal Core files up-to-date; the
-project [drupal/core-composer-scaffold](https://github.com/drupal/core-composer-scaffold)
-is used to ensure that your scaffold files are updated every time drupal/core is
-updated. If you customize any of the "scaffolding" files (commonly `.htaccess`),
-you may need to merge conflicts if any of your modified files are updated in a
-new release of Drupal core.
+The Wiki and content is contained within this repo, and the system has been built using [Docusaurus v2.0](https://docusaurus.io/).
 
-Follow the steps below to update your core files.
+<!-- GETTING STARTED -->
 
-1. Run `composer update "drupal/core-*" --with-dependencies` to update Drupal Core and its dependencies.
-2. Run `git diff` to determine if any of the scaffolding files have changed.
-   Review the files for any changes and restore any customizations to
-  `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-1. In the event that there are non-trivial conflicts in step 2, you may wish
-   to perform these steps on a branch, and use `git merge` to combine the
-   updated core files with your customized files. This facilitates the use
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple;
-   keeping all of your modifications at the beginning or end of the file is a
-   good strategy to keep merges easy.
+## Getting Started
 
-## FAQ
+### Prerequisites
 
-### Should I commit the contrib modules I download?
+Install [Node.js](https://nodejs.org/en/download/).
 
-Composer recommends **no**. They provide [argumentation against but also
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
+### Local Development
 
-### Should I commit the scaffolding files?
+1. Run `yarn install` in your terminal.
+2. Run `npx docusaurus start`
+3. Open `http://localhost:3000/DevNotes`
 
-The [Drupal Composer Scaffold](https://github.com/drupal/core-composer-scaffold)
-plugin can download the scaffold files (like index.php, update.php, …) to the
-web/ directory of your project. If you have not customized those files you could
-choose to not check them into your version control system (e.g. git). If that is
-the case for your project it might be convenient to automatically run the
-drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@composer drupal:scaffold` as post-install and
-post-update command in your composer.json:
+<!-- CONTRIBUTING -->
 
-```json
-"scripts": {
-    "post-install-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@composer drupal:scaffold",
-        "..."
-    ]
-},
-```
+## Contributing
 
-### How can I apply patches to downloaded modules?
+DevNotes is a community development and we will review all pull-requests and issues posted to this repository. If you notice any errors, or feel we have forgot something, please feel free to create a pull request with any suggestions. Larger content additions and suggestions can start as issues which can further be discussed with the team maintaining the page.  
+Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/dev/src/pages/contrib.md).
 
-If you need to apply patches (depending on the project being modified, a pull
-request is often a better solution), you can do so with the
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To add a patch to drupal module foobar insert the patches section in the extra
-section of composer.json:
+<!-- CONTACT -->
 
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL or local path to patch"
-        }
-    }
-}
-```
+## Contact
 
-### How do I specify a PHP version ?
+👤 **Nicolas Barbarisi** :
 
-This project supports PHP 7.3 as minimum version (see [Environment requirements of Drupal 9](https://www.drupal.org/docs/understanding-drupal/how-drupal-9-was-made-and-what-is-included/environment-requirements-of)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7.3+.
+* Role : Developper - Maintainer - Editor
+* Website: www.nicolas-barbarisi.com
+* Github: [@ChrisBradford2](https://github.com/ChrisBradford2)
+* LinkedIn: [@Nicolas Barbarisi ](https://www.linkedin.com/in/nicolas-barbarisi-a4a97a193/)
 
-To prevent this you can add this code to specify the PHP version you want to use in the `config` section of `composer.json`:
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-```json
-"config": {
-    "sort-packages": true,
-    "platform": {
-        "php": "7.3.19"
-    }
-},
-```
+[contributors-shield]: https://img.shields.io/github/contributors/ChrisBradford2/DevNotes.svg?style=for-the-badge
+[contributors-url]: https://github.com/ChrisBradford2/drupalville/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ChrisBradford2/drupalville.svg?style=for-the-badge
+[forks-url]: https://github.com/ChrisBradford2/drupalville/network/members
+[stars-shield]: https://img.shields.io/github/stars/ChrisBradford2/drupalville.svg?style=for-the-badge
+[stars-url]: https://github.com/ChrisBradford2/drupalville/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ChrisBradford2/drupalville.svg?style=for-the-badge
+[issues-url]: https://github.com/ChrisBradford2/drupalville/issues
+[build-shield]: https://img.shields.io/travis/com/ChrisBradford2/drupalville/dev?style=for-the-badge
+[build-url]: hhttps://github.com/ChrisBradford2/drupalville/actions/runs/1476789741
+[licence-shield]: https://img.shields.io/github/license/ChrisBradford2/drupalville?style=for-the-badge
+[licence-url]: https://github.com/ChrisBradford2/drupalville/blob/main/LICENSE
+[website-shield]: https://img.shields.io/website?down_color=red&down_message=down&style=for-the-badge&url=https%3A%2F%2Fchrisbradford2.github.io%2Fdrupalville%2F
+[website-url]: chrisbradford2.github.io/drupalville
+[milestones3-shield]: https://img.shields.io/github/milestones/progress-percent/ChrisBradford2/DevNotes/3?style=for-the-badge
+[milestones3-url]: https://github.com/ChrisBradford2/drupalville/milestone/3
+[milestones4-shield]: https://img.shields.io/github/milestones/progress-percent/ChrisBradford2/drupalville/4?style=for-the-badge
+[milestones4-url]: https://github.com/ChrisBradford2/drupalville/milestone/4
+[commit-shield]: https://img.shields.io/github/commit-activity/m/ChrisBradford2/drupalville?style=for-the-badge
+[commit-url]: https://github.com/ChrisBradford2/drupalville/commits/
