@@ -122,8 +122,8 @@ Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/de
 [stars-url]: https://github.com/ChrisBradford2/drupalville/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ChrisBradford2/drupalville.svg?style=for-the-badge
 [issues-url]: https://github.com/ChrisBradford2/drupalville/issues
-[build-shield]: https://img.shields.io/travis/com/ChrisBradford2/drupalville/dev?style=for-the-badge
-[build-url]: hhttps://github.com/ChrisBradford2/drupalville/actions/runs/1476789741
+[build-shield]: https://img.shields.io/github/workflow/status/ChrisBradford2/drupalville/CI?style=for-the-badge
+[build-url]: https://github.com/ChrisBradford2/drupalville/actions/workflows/ci.yml
 [licence-shield]: https://img.shields.io/github/license/ChrisBradford2/drupalville?style=for-the-badge
 [licence-url]: https://github.com/ChrisBradford2/drupalville/blob/main/LICENSE
 [website-shield]: https://img.shields.io/website?down_color=red&down_message=down&style=for-the-badge&url=https%3A%2F%2Fchrisbradford2.github.io%2Fdrupalville%2F
