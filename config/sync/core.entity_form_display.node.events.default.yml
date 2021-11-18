@@ -38,13 +38,9 @@ content:
     third_party_settings: {  }
   field_event_category:
     weight: 126
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_buttons
     region: content
   field_event_date:
     weight: 122
