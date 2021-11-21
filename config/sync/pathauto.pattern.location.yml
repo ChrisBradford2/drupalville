@@ -6,8 +6,8 @@ dependencies:
     - node
 id: location
 label: Location
-type: 'canonical_entities:node'
-pattern: '/location/[node:title]'
+type: "canonical_entities:node"
+pattern: "/location/[node:title]"
 selection_criteria:
   def3edf7-9e96-4457-ade1-540a88f2ee47:
     id: node_type
@@ -19,4 +19,4 @@ selection_criteria:
     uuid: def3edf7-9e96-4457-ade1-540a88f2ee47
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships: {}
