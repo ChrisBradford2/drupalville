@@ -6,8 +6,10 @@ dependencies:
     - field.field.node.events.body
     - field.field.node.events.field_event_category
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_download
     - field.field.node.events.field_event_location
     - field.field.node.events.field_event_price
+    - field.field.node.events.field_event_video
     - field.field.node.events.field_event_website
     - node.type.events
   module:
@@ -44,6 +46,15 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_download:
+    type: entity_reference_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_event_location:
     weight: 103
     label: above
@@ -62,6 +73,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
+    region: content
+  field_event_video:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_event_website:
     weight: 105

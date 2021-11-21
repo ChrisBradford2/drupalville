@@ -8,11 +8,14 @@ dependencies:
     - field.field.node.article.field_article_keywords
     - field.field.node.article.field_article_type
     - field.field.node.article.field_image
+    - field.field.node.article.field_news_files
+    - field.field.node.article.field_news_video
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - image
+    - media_library
     - path
     - text
 _core:
@@ -45,7 +48,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_article_keywords:
-    weight: 26
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -64,6 +67,20 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_news_files:
+    type: media_library_widget
+    weight: 12
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_news_video:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 9
@@ -81,7 +98,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:

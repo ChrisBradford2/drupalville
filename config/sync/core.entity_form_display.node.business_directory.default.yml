@@ -6,14 +6,17 @@ dependencies:
     - field.field.node.business_directory.body
     - field.field.node.business_directory.field_business_address
     - field.field.node.business_directory.field_business_category
+    - field.field.node.business_directory.field_business_files
     - field.field.node.business_directory.field_business_phone
     - field.field.node.business_directory.field_business_website
+    - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
     - image.style.thumbnail
     - node.type.business_directory
   module:
     - image
     - link
+    - media_library
     - path
     - telephone
     - text
@@ -52,6 +55,13 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_business_files:
+    type: media_library_widget
+    weight: 128
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_business_phone:
     weight: 125
     settings:
@@ -66,6 +76,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_featured_business_video:
+    type: media_library_widget
+    weight: 127
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_image:
     weight: 122

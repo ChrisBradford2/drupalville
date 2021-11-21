@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.article.field_article_keywords
     - field.field.node.article.field_article_type
     - field.field.node.article.field_image
+    - field.field.node.article.field_news_files
+    - field.field.node.article.field_news_video
     - image.style.large
     - node.type.article
   module:
@@ -64,6 +66,24 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_news_files:
+    type: entity_reference_entity_view
+    weight: 114
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_news_video:
+    type: entity_reference_entity_view
+    weight: 113
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content

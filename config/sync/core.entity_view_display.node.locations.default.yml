@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.locations.field_location_address
     - field.field.node.locations.field_location_amenities
     - field.field.node.locations.field_location_category
+    - field.field.node.locations.field_location_file_downloads
+    - field.field.node.locations.field_location_video
     - node.type.locations
   module:
     - text
@@ -46,6 +48,24 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_location_file_downloads:
+    type: entity_reference_entity_view
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_location_video:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   links:
     weight: 100
