@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.locations.field_location_video
     - node.type.locations
   module:
+    - simple_gmap
     - text
     - user
 id: node.locations.default
@@ -27,11 +28,23 @@ content:
     region: content
   field_location_address:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
+      include_map: true
+      apikey: ''
+      iframe_width: '600'
+      iframe_height: '300'
+      iframe_title: ''
+      static_scale: 1
+      include_link: true
+      link_text: 'View larger map'
+      zoom_level: 14
+      include_text: true
+      map_type: m
+      langcode: en
+      include_static_map: false
     third_party_settings: {  }
-    type: string
+    type: simple_gmap
     region: content
   field_location_amenities:
     weight: 104
@@ -69,7 +82,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

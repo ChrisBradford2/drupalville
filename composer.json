@@ -26,6 +26,7 @@
         "drupal/gin": "^3.0",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/scheduler": "^1.4",
+        "drupal/simple_gmap": "^3.0",
         "drupal/tinymce": "^1.0@alpha",
         "drush/drush": "^10.3",
         "symfony/dotenv": "^5.3",
