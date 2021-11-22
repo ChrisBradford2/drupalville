@@ -1,0 +1,29 @@
+uuid: 2a1dc0ca-18a8-43bc-a67b-eea32ea3611f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_calendar
+  module:
+    - system
+    - views
+  theme:
+    - breeze
+id: views_block__event_calendar_block_1
+theme: breeze
+region: content_bottom2
+weight: 0
+provider: null
+plugin: 'views_block:event_calendar-block_1'
+settings:
+  id: 'views_block:event_calendar-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

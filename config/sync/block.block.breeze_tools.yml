@@ -13,7 +13,7 @@ _core:
 id: breeze_tools
 theme: breeze
 region: footer2
-weight: -7
+weight: -11
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
