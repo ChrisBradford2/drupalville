@@ -6,8 +6,7 @@ dependencies:
     - 'block_content:basic:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
   module:
     - block_content
-    - system
-    - user
+    - ctools
   theme:
     - breeze
 id: breeze_welcomeblock
@@ -20,19 +19,15 @@ settings:
   id: 'block_content:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
   label: 'Welcome Block'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-  user_role:
-    id: user_role
-    roles:
-      anonymous: anonymous
-    negate: false
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
     context_mapping:
-      user: '@user.current_user_context:current_user'
+      node: '@node.node_route_context:node'
