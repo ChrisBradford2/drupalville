@@ -15,13 +15,13 @@ theme: breeze
 region: footer2
 weight: -7
 provider: null
-plugin: "system_menu_block:tools"
+plugin: 'system_menu_block:tools'
 settings:
-  id: "system_menu_block:tools"
+  id: 'system_menu_block:tools'
   label: Tools
   provider: system
   label_display: visible
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {}
+visibility: {  }

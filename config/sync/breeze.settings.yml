@@ -5,8 +5,8 @@ _core:
   default_config_hash: 8GyocqC2nyRrMjMdTwkLg8XLON-hZQ68wsuOEjxmCx0
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ""
-  url: "https://drupalville.ddev.site/themes/contrib/breeze/favicon.ico"
+  path: ''
+  url: 'https://drupalville.ddev.site/themes/contrib/breeze/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -17,32 +17,32 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: ""
-  url: ""
+  path: ''
+  url: ''
   use_default: true
-table_responsive: "-1"
+table_responsive: '-1'
 breadcrumb_home: 1
 region_wells:
-  header: ""
-  header_right: ""
-  navigation: ""
-  navigation_collapsible: ""
-  highlighted: ""
-  help: ""
-  content: ""
-  sidebar_first: ""
+  header: ''
+  header_right: ''
+  navigation: ''
+  navigation_collapsible: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
   sidebar_second: well
-  content_bottom1: ""
-  content_bottom2: ""
-  content_bottom3: ""
-  footer: ""
-  footer1: ""
-  footer2: ""
-  footer3: ""
+  content_bottom1: ''
+  content_bottom2: ''
+  content_bottom3: ''
+  footer: ''
+  footer1: ''
+  footer2: ''
+  footer3: ''
 cdn_theme: bootstrap
-cdn_cache_ttl_versions: "604800"
-cdn_cache_ttl_themes: "604800"
-cdn_cache_ttl_assets: "0"
-cdn_cache_ttl_library: "0"
-reset_http_request_cache: ""
-table: ""
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''

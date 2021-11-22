@@ -11,10 +11,12 @@ dependencies:
     - field.field.node.business_directory.field_business_website
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
+    - field.field.node.business_directory.layout_builder__layout
     - node.type.business_directory
   module:
     - image
     - link
+    - telephone
     - text
     - user
 id: node.business_directory.default
@@ -25,12 +27,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_business_address:
-    weight: 103
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -38,7 +40,7 @@ content:
     type: string
     region: content
   field_business_category:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link: true
@@ -47,7 +49,7 @@ content:
     region: content
   field_business_files:
     type: entity_reference_entity_view
-    weight: 108
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -55,14 +57,15 @@ content:
     third_party_settings: {  }
     region: content
   field_business_phone:
-    weight: 105
+    weight: 5
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_business_website:
-    weight: 104
+    weight: 4
     label: above
     settings:
       trim_length: 80
@@ -75,7 +78,7 @@ content:
     region: content
   field_featured_business_video:
     type: entity_reference_entity_view
-    weight: 107
+    weight: 7
     label: above
     settings:
       view_mode: default
@@ -83,8 +86,8 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -92,8 +95,9 @@ content:
     type: image
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

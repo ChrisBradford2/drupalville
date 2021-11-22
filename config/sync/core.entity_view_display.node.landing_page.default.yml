@@ -1,0 +1,87 @@
+uuid: 6b92ecbb-6b1b-4ccd-b858-910f0a431cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.3_column_media_block
+    - block_content.type.basic
+    - field.field.node.landing_page.body
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          56bb5593-3b77-41f6-b0d9-77abe71f9507:
+            uuid: 56bb5593-3b77-41f6-b0d9-77abe71f9507
+            region: content
+            configuration:
+              id: 'extra_field_block:node:landing_page:links'
+              label: Links
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          8cc791c2-f850-4d9e-9310-0eb37953acc1:
+            uuid: 8cc791c2-f850-4d9e-9310-0eb37953acc1
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: 'Top Block'
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 5
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          817119a7-0a62-4e51-a991-a3bd8b670b01:
+            uuid: 817119a7-0a62-4e51-a991-a3bd8b670b01
+            region: content
+            configuration:
+              id: 'inline_block:3_column_media_block'
+              label: '3 column media'
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 6
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

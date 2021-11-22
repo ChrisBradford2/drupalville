@@ -6,8 +6,8 @@ dependencies:
     - node
 id: article
 label: Article
-type: "canonical_entities:node"
-pattern: "/news/[node:title]"
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
 selection_criteria:
   279d8078-c1a9-4d23-a252-7b76276fd870:
     id: node_type
@@ -19,4 +19,4 @@ selection_criteria:
     uuid: 279d8078-c1a9-4d23-a252-7b76276fd870
 selection_logic: and
 weight: -5
-relationships: {}
+relationships: {  }
