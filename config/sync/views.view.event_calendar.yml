@@ -92,7 +92,7 @@ display:
             page: '#3a87ad'
           rrule: ''
           duration: ''
-          bundle_type: ''
+          bundle_type: events
           classes: ''
       row:
         type: fields
