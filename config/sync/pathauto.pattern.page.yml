@@ -6,8 +6,8 @@ dependencies:
     - node
 id: page
 label: Page
-type: 'canonical_entities:node'
-pattern: '/page/[node:title]'
+type: "canonical_entities:node"
+pattern: "/page/[node:title]"
 selection_criteria:
   995a3be6-cf6e-47c1-b7aa-22ecb8e02e3e:
     id: node_type
@@ -19,4 +19,4 @@ selection_criteria:
     uuid: 995a3be6-cf6e-47c1-b7aa-22ecb8e02e3e
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships: {}
