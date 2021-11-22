@@ -15,13 +15,13 @@ theme: bootstrap
 region: navigation_collapsible
 weight: 10
 provider: null
-plugin: 'system_menu_block:main'
+plugin: "system_menu_block:main"
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
+  id: "system_menu_block:main"
+  label: "Main navigation"
   provider: system
-  label_display: '0'
+  label_display: "0"
   level: 1
   depth: 2
   expand_all_items: false
-visibility: {  }
+visibility: {}
