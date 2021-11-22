@@ -23,27 +23,27 @@ content:
     label: hidden
     type: text_default
     weight: 101
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     region: content
   field_location_address:
     weight: 102
     label: hidden
     settings:
       include_map: true
-      apikey: ""
-      iframe_width: "600"
-      iframe_height: "300"
-      iframe_title: ""
+      apikey: ''
+      iframe_width: '600'
+      iframe_height: '300'
+      iframe_title: ''
       static_scale: 1
       include_link: true
-      link_text: "View larger map"
+      link_text: 'View larger map'
       zoom_level: 14
       include_text: true
       map_type: m
       langcode: en
       include_static_map: false
-    third_party_settings: {}
+    third_party_settings: {  }
     type: simple_gmap
     region: content
   field_location_amenities:
@@ -51,7 +51,7 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {}
+    third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_location_category:
@@ -59,7 +59,7 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {}
+    third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_location_file_downloads:
@@ -69,7 +69,7 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {}
+    third_party_settings: {  }
     region: content
   field_location_video:
     type: entity_reference_entity_view
@@ -78,11 +78,11 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {}
+    third_party_settings: {  }
     region: content
   links:
     weight: 100
     region: content
-    settings: {}
-    third_party_settings: {}
-hidden: {}
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
