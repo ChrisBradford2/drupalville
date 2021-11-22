@@ -5,9 +5,9 @@ dependencies:
   module:
     - node
 id: business
-label: 'Business Directory'
-type: 'canonical_entities:node'
-pattern: '/business-directory/[node:title]'
+label: "Business Directory"
+type: "canonical_entities:node"
+pattern: "/business-directory/[node:title]"
 selection_criteria:
   f54a4397-b5ea-4e45-8c17-c10e594613b9:
     id: node_type
@@ -19,4 +19,4 @@ selection_criteria:
     uuid: f54a4397-b5ea-4e45-8c17-c10e594613b9
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships: {}
