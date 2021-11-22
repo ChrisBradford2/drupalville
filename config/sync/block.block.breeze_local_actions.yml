@@ -1,0 +1,20 @@
+uuid: 16d82c1f-6ac3-4222-a2a5-1a85894cea8a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - breeze
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: breeze_local_actions
+theme: breeze
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

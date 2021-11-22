@@ -30,34 +30,34 @@ content:
     settings:
       rows: 9
       summary_rows: 3
-      placeholder: ""
+      placeholder: ''
       show_summary: false
-    third_party_settings: {}
+    third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
   field_event_category:
     weight: 126
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     type: options_select
     region: content
   field_event_date:
     weight: 122
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
     type: datetime_default
     region: content
   field_event_download:
     type: media_library_widget
     weight: 128
     settings:
-      media_types: {}
-    third_party_settings: {}
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_event_location:
     weight: 123
@@ -65,87 +65,87 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ""
-    third_party_settings: {}
+      placeholder: ''
+    third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_event_price:
     weight: 124
     settings:
-      placeholder: ""
-    third_party_settings: {}
+      placeholder: ''
+    third_party_settings: {  }
     type: number
     region: content
   field_event_video:
     type: media_library_widget
     weight: 127
     settings:
-      media_types: {}
-    third_party_settings: {}
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_event_website:
     weight: 125
     settings:
-      placeholder_url: ""
-      placeholder_title: ""
-    third_party_settings: {}
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
     type: link_default
     region: content
   path:
     type: path
     weight: 30
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 15
     region: content
-    third_party_settings: {}
+    third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
     weight: 30
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 120
     region: content
-    third_party_settings: {}
+    third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 16
     region: content
-    third_party_settings: {}
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: -5
     region: content
     settings:
       size: 60
-      placeholder: ""
-    third_party_settings: {}
+      placeholder: ''
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
-      placeholder: ""
+      placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {}
+    third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
     weight: 30
     region: content
-    settings: {}
-    third_party_settings: {}
-hidden: {}
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
