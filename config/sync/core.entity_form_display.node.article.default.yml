@@ -10,13 +10,16 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_news_files
     - field.field.node.article.field_news_video
+    - field.field.node.article.layout_builder__layout
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - content_moderation
     - image
     - media_library
     - path
+    - scheduler
     - text
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
@@ -81,6 +84,12 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 9
@@ -143,4 +152,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
