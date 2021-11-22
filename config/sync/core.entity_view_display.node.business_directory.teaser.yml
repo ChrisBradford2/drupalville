@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.business_directory.field_featured_business_video
     - field.field.node.business_directory.field_image
     - field.field.node.business_directory.layout_builder__layout
-    - image.style.thumbnail
     - node.type.business_directory
   module:
     - image
@@ -23,70 +22,7 @@ dependencies:
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: true
-    sections:
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: ''
-          column_widths: 25-75
-          context_mapping: {  }
-        components:
-          5adf1e78-cf53-4f36-a473-94eefee5c32f:
-            uuid: 5adf1e78-cf53-4f36-a473-94eefee5c32f
-            region: first
-            configuration:
-              id: 'field_block:node:business_directory:field_image'
-              label: 'Business Logo'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: image
-                settings:
-                  image_style: media_library
-                  image_link: content
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
-          450ee6db-25d3-4223-adbb-fff7518b3636:
-            uuid: 450ee6db-25d3-4223-adbb-fff7518b3636
-            region: second
-            configuration:
-              id: 'field_block:node:business_directory:body'
-              label: 'Business Description'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: text_trimmed
-                settings:
-                  trim_length: 600
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
-          1694976e-df00-4237-8d4c-bad23d60165c:
-            uuid: 1694976e-df00-4237-8d4c-bad23d60165c
-            region: second
-            configuration:
-              id: 'extra_field_block:node:business_directory:links'
-              label: Links
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
+    enabled: false
 id: node.business_directory.teaser
 targetEntityType: node
 bundle: business_directory
@@ -106,7 +42,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
   links:
