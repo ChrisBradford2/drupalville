@@ -1,4 +1,4 @@
-uuid: 77517ccd-f7e7-40fd-aec0-e21431021228
+uuid: 87f9407a-4239-4705-9969-5206ec84c847
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,11 @@ dependencies:
   module:
     - block_content
     - system
-    - user
   theme:
     - breeze
-id: breeze_welcomeblock
+id: welcomeblock_2
 theme: breeze
-region: sidebar_first
+region: footer1
 weight: -7
 provider: null
 plugin: 'block_content:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
@@ -28,11 +27,4 @@ visibility:
   request_path:
     id: request_path
     pages: '<front>'
-    negate: false
-  user_role:
-    id: user_role
-    roles:
-      anonymous: anonymous
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
+    negate: true
