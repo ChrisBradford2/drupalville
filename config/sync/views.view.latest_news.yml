@@ -418,6 +418,7 @@ display:
         type: normal
         title: 'Latest News'
         menu_name: main
+        weight: -46
     cache_metadata:
       max-age: -1
       contexts:
