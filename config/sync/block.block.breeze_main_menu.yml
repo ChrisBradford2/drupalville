@@ -1,0 +1,27 @@
+uuid: 79d10eae-0fa3-4bd5-90fc-9f1a4f556063
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - breeze
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: breeze_main_menu
+theme: breeze
+region: navigation
+weight: -7
+provider: null
+plugin: "system_menu_block:main"
+settings:
+  id: "system_menu_block:main"
+  label: "Main navigation"
+  provider: system
+  label_display: "0"
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {}
