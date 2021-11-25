@@ -20,69 +20,69 @@ bundle: locations
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_location_address:
-    weight: 102
+    type: simple_gmap
     label: hidden
     settings:
       include_map: true
-      apikey: ''
-      iframe_width: '600'
+      include_static_map: false
+      include_link: true
+      include_text: true
       iframe_height: '300'
+      iframe_width: '600'
       iframe_title: ''
       static_scale: 1
-      include_link: true
-      link_text: 'View larger map'
       zoom_level: 14
-      include_text: true
+      link_text: 'View larger map'
       map_type: m
       langcode: en
-      include_static_map: false
+      apikey: ''
     third_party_settings: {  }
-    type: simple_gmap
+    weight: 102
     region: content
   field_location_amenities:
-    weight: 104
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 104
     region: content
   field_location_category:
-    weight: 103
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 103
     region: content
   field_location_file_downloads:
     type: entity_reference_entity_view
-    weight: 106
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 106
     region: content
   field_location_video:
     type: entity_reference_entity_view
-    weight: 105
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 105
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

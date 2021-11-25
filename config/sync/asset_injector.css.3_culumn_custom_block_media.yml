@@ -13,15 +13,15 @@ code: |-
     float: left;
     
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   node_type:
     id: node_type
-    bundles:
-      landing_page: landing_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      landing_page: landing_page
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

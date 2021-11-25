@@ -11,12 +11,12 @@ pattern: '/location/[node:title]'
 selection_criteria:
   def3edf7-9e96-4457-ade1-540a88f2ee47:
     id: node_type
-    bundles:
-      locations: locations
     negate: false
+    uuid: def3edf7-9e96-4457-ade1-540a88f2ee47
     context_mapping:
       node: node
-    uuid: def3edf7-9e96-4457-ade1-540a88f2ee47
+    bundles:
+      locations: locations
 selection_logic: and
 weight: -5
 relationships: {  }

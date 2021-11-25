@@ -18,16 +18,16 @@ plugin: 'views_block:business_directory-block_1'
 settings:
   id: 'views_block:business_directory-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      business_directory: business_directory
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      business_directory: business_directory

@@ -18,13 +18,13 @@ plugin: 'block_content:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
 settings:
   id: 'block_content:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
   label: 'Welcome Block'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /test-landing-page
     negate: true
+    pages: /test-landing-page

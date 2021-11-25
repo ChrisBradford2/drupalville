@@ -1,7 +1,28 @@
 uuid: ce19305a-94a1-48af-9b08-91cfda198080
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.business_directory
+    - node.type.events
+    - node.type.locations
+    - node.type.page
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - filter
+    - media
+    - node
+    - scheduler
+    - system
+    - toolbar
 id: content_editor
 label: 'Content Editor'
 weight: -10

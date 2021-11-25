@@ -17,8 +17,8 @@ plugin: 'block_content:4ee1d0b7-8095-4384-a6a5-e57a44f31392'
 settings:
   id: 'block_content:4ee1d0b7-8095-4384-a6a5-e57a44f31392'
   label: '3 column test'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
