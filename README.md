@@ -13,9 +13,9 @@
     <img src="/web/themes/custom/breeze/drupalville-logo.png" alt="Logo" fill="#ffffff"/>
 
   <p align="center">
-    Wiki of the B3 INGLOG courses.
+    A Great Place To Learn About Drupal.
     <br />
-    <a href="https://ChrisBradford2.github.io/drupalville"><strong>Explore the Website »</strong></a>
+    <a href="https://drupalville.nicolas-barbarisi.com"><strong>Explore the Website »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ChrisBradford2/drupalville/issues">Report Error</a>
@@ -61,51 +61,101 @@ Please mark the page you work on "in progress"-->
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
 
-DevNotes is a web platform acting as a Wiki for the bachelor 3 INGLOG of Paris Ynov Campus allowing to visualize the students course notes.
+## About Drupalville
 
-### Built With
+A brief description of what this project does and who it's for
 
-The Wiki and content is contained within this repo, and the system has been built using [Docusaurus v2.0](https://docusaurus.io/).
+## Demo
 
-<!-- GETTING STARTED -->
+https://drupalville.nicolas-barbarisi.com
 
-## Getting Started
 
-### Prerequisites
+## Tech Stack
 
-Install [Node.js](https://nodejs.org/en/download/).
+Drupal
 
-### Local Development
 
-1. Run `yarn install` in your terminal.
-2. Run `npx docusaurus start`
-3. Open `http://localhost:3000/DevNotes`
+## Installation
 
-<!-- CONTRIBUTING -->
+Install my-project with npm
 
-## Contributing
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Run Locally
 
-DevNotes is a community development and we will review all pull-requests and issues posted to this repository. If you notice any errors, or feel we have forgot something, please feel free to create a pull request with any suggestions. Larger content additions and suggestions can start as issues which can further be discussed with the team maintaining the page.  
-Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/dev/src/pages/contrib.md).
+Clone the project
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```bash
+  git clone https://link-to-project
+```
 
-<!-- CONTACT -->
+Go to the project directory
 
-## Contact
+```bash
+  cd my-project
+```
 
-👤 **Nicolas Barbarisi** :
+Install dependencies
 
-* Role : Developper - Maintainer - Editor
-* Website: www.nicolas-barbarisi.com
-* Github: [@ChrisBradford2](https://github.com/ChrisBradford2)
-* LinkedIn: [@Nicolas Barbarisi ](https://www.linkedin.com/in/nicolas-barbarisi-a4a97a193/)
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## License
+
+[MIT](https://github.com/ChrisBradford2/drupalville/blob/main/LICENSE)
+
+
+## Roadmap
+
+- Additional browser support
+
+- Add more integrations
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+
+## Authors
+
+- [@ChrisBradford2](https://www.github.com/ChrisBradford2)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at fake@fake.com
+
+
+## Support
+
+For support, email fake@fake.com or join our Slack channel.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -123,7 +173,7 @@ Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/de
 [licence-shield]: https://img.shields.io/github/license/ChrisBradford2/drupalville?style=for-the-badge
 [licence-url]: https://github.com/ChrisBradford2/drupalville/blob/main/LICENSE
 [website-shield]: https://img.shields.io/website?down_color=red&down_message=down&style=for-the-badge&url=https%3A%2F%2Fchrisbradford2.github.io%2Fdrupalville%2F
-[website-url]: chrisbradford2.github.io/drupalville
+[website-url]: https://drupalville.nicolas-barbarisi.com
 [milestones3-shield]: https://img.shields.io/badge/Course-100%25-success?style=for-the-badge
 [milestones3-url]: https://github.com/ChrisBradford2/drupalville/projects/1
 [milestones4-shield]: https://img.shields.io/github/milestones/progress-percent/ChrisBradford2/drupalville/4?style=for-the-badge
