@@ -1,4 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -6,15 +5,12 @@
 [![Build][build-shield]][build-url]
 [![Licence][licence-shield]][licence-url]
 [![Website][website-shield]][website-url]
-[![Semestre1][milestones3-shield]][milestones3-url]
-[![Semestre2][milestones4-shield]][milestones4-url]
+[![Formation Progress][milestones3-shield]][milestones3-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <!--<img src="https://raw.githubusercontent.com/ChrisBradford2/DevNotes/dev/static/img/devnotes.png" alt="Logo" width="80" height="80" fill="#ffffff"/>-->
-
-  <h3 align="center">Drupalville</h3>
+    <img src="/web/themes/custom/breeze/drupalville-logo.png" alt="Logo" fill="#ffffff"/>
 
   <p align="center">
     Wiki of the B3 INGLOG courses.
@@ -114,7 +110,7 @@ Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/de
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/ChrisBradford2/DevNotes.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ChrisBradford2/drupalville.svg?style=for-the-badge
 [contributors-url]: https://github.com/ChrisBradford2/drupalville/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ChrisBradford2/drupalville.svg?style=for-the-badge
 [forks-url]: https://github.com/ChrisBradford2/drupalville/network/members
@@ -128,8 +124,8 @@ Have a look at [CONTRIBUTING](https://github.com/ChrisBradford2/DevNotes/blob/de
 [licence-url]: https://github.com/ChrisBradford2/drupalville/blob/main/LICENSE
 [website-shield]: https://img.shields.io/website?down_color=red&down_message=down&style=for-the-badge&url=https%3A%2F%2Fchrisbradford2.github.io%2Fdrupalville%2F
 [website-url]: chrisbradford2.github.io/drupalville
-[milestones3-shield]: https://img.shields.io/github/milestones/progress-percent/ChrisBradford2/DevNotes/3?style=for-the-badge
-[milestones3-url]: https://github.com/ChrisBradford2/drupalville/milestone/3
+[milestones3-shield]: https://img.shields.io/badge/Course-100%25-success?style=for-the-badge
+[milestones3-url]: https://github.com/ChrisBradford2/drupalville/projects/1
 [milestones4-shield]: https://img.shields.io/github/milestones/progress-percent/ChrisBradford2/drupalville/4?style=for-the-badge
 [milestones4-url]: https://github.com/ChrisBradford2/drupalville/milestone/4
 [commit-shield]: https://img.shields.io/github/commit-activity/m/ChrisBradford2/drupalville?style=for-the-badge
