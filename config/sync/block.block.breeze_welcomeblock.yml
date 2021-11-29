@@ -6,7 +6,7 @@ dependencies:
     - 'block_content:basic:0be6f816-bef9-4f3f-ad49-3d3a043fbac3'
   module:
     - block_content
-    - ctools
+    - node
   theme:
     - breeze
 id: breeze_welcomeblock
